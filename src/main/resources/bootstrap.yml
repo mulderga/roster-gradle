@@ -1,0 +1,9 @@
+---
+spring:
+  application:
+    name: roster
+  cloud:
+    config:
+      uri: ${vcap.services.config-service.credentials.uri}
+      username: timandgerard
+      password: herpderp

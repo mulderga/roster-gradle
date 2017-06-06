@@ -9,6 +9,7 @@ applications:
    - roster-db 
    - my-logs
    - newrelic
+   - config-service
   path: ./build/libs/roster.jar
   env:
     ROSTER_A: weekly
