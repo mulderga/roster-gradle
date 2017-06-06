@@ -1,0 +1,16 @@
+---
+applications:
+- name: roster
+  random-route: true
+  instances: 1
+  memory: 1024M
+  buildpack: java_buildpack
+  services:
+   - roster-db 
+   - my-logs
+   - newrelic
+  path: ./build/libs/roster.jar
+  env:
+    ROSTER_A: weekly
+    ROSTER_B: monthly
+    ROSTER_C: yearly
