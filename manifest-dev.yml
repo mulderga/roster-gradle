@@ -3,12 +3,11 @@ applications:
 - name: roster
   random-route: true
   instances: 1
-  memory: 1024M
+  memory: 512M
   buildpack: java_buildpack
   services:
    - roster-db 
    - my-logs
-   - newrelic
    - config-service
   path: ./build/libs/roster.jar
   env:
